@@ -10,33 +10,34 @@ package modelo;
  * @author LN710Q
  */
 public class Filtro {
-       private int id;
+    private int id;
     private String codigo;
     private String marca;
     private int stock;
-    private boolean existencia;
+    private boolean exixtencia;
     
-    public Filtro(){}
+    public Filtro() {
+    }
 
-    public Filtro(int id, String codigo, String marca, int stock, boolean existencia) {
+    public Filtro(int id, String codigo, String marca, int stock, boolean exixtencia) {
         this.id = id;
         this.codigo = codigo;
         this.marca = marca;
         this.stock = stock;
-        this.existencia = existencia;
+        this.exixtencia = exixtencia;
     }
 
-    public Filtro(String codido, String marca, int stock, boolean existencia) {
-        this.codigo = codido;
+    public Filtro(String codigo, String marca,int stock, boolean exixtencia) {
+        this.codigo = codigo;
         this.marca = marca;
-        this.stock = stock;
-        this.existencia = existencia;
+        this.stock=stock;
+        this.exixtencia = exixtencia;
     }
 
-    public Filtro(String marca, int stock, boolean existencia) {
+    public Filtro(String marca, int stock, boolean exixtencia) {
         this.marca = marca;
         this.stock = stock;
-        this.existencia = existencia;
+        this.exixtencia = exixtencia;
     }
 
     public int getId() {
@@ -71,12 +72,13 @@ public class Filtro {
         this.stock = stock;
     }
 
-    public boolean getExistencia() {
-        return existencia;
+    public boolean getExixtencia() {
+        return exixtencia;
     }
 
-    public void setExistencia(boolean existencia) {
-        this.existencia = existencia;
+    public void setExixtencia(boolean exixtencia) {
+        this.exixtencia = exixtencia;
     }
-
+    
+    
 }
